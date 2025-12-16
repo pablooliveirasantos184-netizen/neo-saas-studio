@@ -143,7 +143,11 @@ type Product = {
 };
 
 const ProductCard = ({ product, index }: { product: Product; index: number }) => {
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(product.whatsappMessage)}`;
+  const handleWhatsAppClick = () => {
+    const message = encodeURIComponent(product.whatsappMessage);
+    const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${message}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
 
   return (
     <Card 
@@ -198,12 +202,13 @@ const ProductCard = ({ product, index }: { product: Product; index: number }) =>
       </CardContent>
 
       <CardFooter className="relative">
-        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-full">
-          <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 group-hover:box-glow transition-all">
-            <MessageCircle className="w-4 h-4 mr-2" />
-            Comprar Agora
-          </Button>
-        </a>
+        <Button 
+          onClick={handleWhatsAppClick}
+          className="w-full bg-primary text-primary-foreground hover:bg-primary/90 group-hover:box-glow transition-all"
+        >
+          <MessageCircle className="w-4 h-4 mr-2" />
+          Comprar Agora
+        </Button>
       </CardFooter>
     </Card>
   );
