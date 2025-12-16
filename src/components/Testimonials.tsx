@@ -5,19 +5,31 @@ const testimonials = [
   {
     name: "Carlos M.",
     role: "Dono de Delivery",
-    content: "O sistema de delivery mudou meu negócio! Agora recebo pedidos direto no WhatsApp e organizo tudo com facilidade.",
+    content: "Comprei o sistema de delivery e recebi na hora pelo WhatsApp! Atendimento super rápido e o produto é excelente.",
     rating: 5
   },
   {
     name: "Ana Paula",
     role: "Social Media",
-    content: "As artes do Canva são incríveis! Economizo horas de trabalho toda semana. Meus clientes amam os designs.",
+    content: "O pack de artes do Canva é sensacional! Paguei via PIX e em 2 minutos já estava com todas as 10 mil artes.",
     rating: 5
   },
   {
     name: "Rafael S.",
     role: "Empreendedor Digital",
-    content: "Os prompts do ChatGPT me ajudam a criar conteúdo que converte. Já recuperei o investimento várias vezes!",
+    content: "Os prompts são muito bem elaborados. O atendimento pelo WhatsApp foi nota 10, super profissional!",
+    rating: 5
+  },
+  {
+    name: "Juliana F.",
+    role: "Freelancer",
+    content: "Fiz o curso Mestres da IA e valeu cada centavo! Suporte rápido no WhatsApp e conteúdo de alta qualidade.",
+    rating: 5
+  },
+  {
+    name: "Pedro H.",
+    role: "Designer Iniciante",
+    content: "Comprei os prompts lucrativos e já consegui criar conteúdos que me renderam clientes. Recomendo muito!",
     rating: 5
   }
 ];
