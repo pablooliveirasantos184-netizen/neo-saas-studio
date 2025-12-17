@@ -17,8 +17,8 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
       
       {/* Glow effects */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px] animate-pulse-glow" />
-      <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-primary/10 rounded-full blur-[100px] animate-pulse-glow animation-delay-300" />
+      <div className="absolute top-1/4 left-1/4 w-48 sm:w-72 md:w-96 h-48 sm:h-72 md:h-96 bg-primary/20 rounded-full blur-[80px] sm:blur-[100px] md:blur-[120px] animate-pulse-glow" />
+      <div className="absolute bottom-1/4 right-1/4 w-36 sm:w-56 md:w-72 h-36 sm:h-56 md:h-72 bg-primary/10 rounded-full blur-[60px] sm:blur-[80px] md:blur-[100px] animate-pulse-glow animation-delay-300" />
 
       <div className="container mx-auto px-4 relative z-10 text-center">
         <div className="animate-fade-in-up">
@@ -28,12 +28,12 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 animate-fade-in-up animation-delay-100">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-4 sm:mb-6 animate-fade-in-up animation-delay-100 px-2">
           Transforme seu negócio com{" "}
           <span className="gradient-text text-glow">soluções digitais</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up animation-delay-200">
+        <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 sm:mb-10 animate-fade-in-up animation-delay-200 px-4">
           Ferramentas profissionais prontas para usar. Sistemas, artes e prompts 
           que vão acelerar seu crescimento e aumentar seus lucros.
         </p>
