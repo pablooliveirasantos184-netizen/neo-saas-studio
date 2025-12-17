@@ -1,23 +1,22 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
+import logoPlDigital from "@/assets/logo-pl-digital.png";
 
 const Footer = () => {
-  const whatsappLink = "https://wa.me/5522997455396?text=Olá! Tenho interesse nos produtos digitais da Pl Digital!";
+  const whatsappLink = "https://wa.me/5522997455396?text=Olá! Tenho interesse nos produtos digitais da PL Digital!";
 
   return (
-    <footer className="py-12 border-t border-border">
+    <footer className="py-8 sm:py-12 border-t border-border">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between md:gap-8">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <span className="font-display font-bold text-primary-foreground text-lg">Pl</span>
-            </div>
-            <span className="font-display font-bold text-xl text-foreground">Pl Digital</span>
+            <img src={logoPlDigital} alt="PL Digital" className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg object-cover" />
+            <span className="font-display font-bold text-lg sm:text-xl text-foreground">PL Digital</span>
           </div>
 
           {/* Links */}
-          <div className="flex items-center gap-6 text-sm text-muted-foreground">
+          <div className="flex items-center gap-4 sm:gap-6 text-xs sm:text-sm text-muted-foreground">
             <a href="#" className="hover:text-primary transition-colors">
               Termos de Uso
             </a>

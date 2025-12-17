@@ -278,12 +278,12 @@ const ProductsSection = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         {/* Countdown Timer Banner */}
-        <div className="flex justify-center mb-8">
-          <div className="bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 border border-primary/30 rounded-2xl px-6 md:px-10 py-5 flex flex-col md:flex-row items-center gap-4 animate-fade-in [animation-duration:0.6s]">
+        <div className="flex justify-center mb-8 px-2">
+          <div className="bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 border border-primary/30 rounded-xl sm:rounded-2xl px-4 sm:px-6 md:px-10 py-4 sm:py-5 flex flex-col items-center gap-3 sm:gap-4 animate-fade-in [animation-duration:0.6s] w-full max-w-md md:max-w-none md:w-auto">
             <div className="flex items-center gap-2">
-              <Flame className="w-6 h-6 text-orange-500 animate-pulse" />
-              <span className="text-foreground font-bold text-lg md:text-xl">OFERTA EXPIRA EM:</span>
-              <Flame className="w-6 h-6 text-orange-500 animate-pulse" />
+              <Flame className="w-5 h-5 sm:w-6 sm:h-6 text-orange-500 animate-pulse" />
+              <span className="text-foreground font-bold text-sm sm:text-lg md:text-xl text-center">OFERTA EXPIRA EM:</span>
+              <Flame className="w-5 h-5 sm:w-6 sm:h-6 text-orange-500 animate-pulse" />
             </div>
             <CountdownTimer />
           </div>
@@ -299,13 +299,15 @@ const ProductsSection = () => {
         </div>
 
         <Tabs defaultValue="todos" className="w-full">
-          <TabsList className="grid w-full max-w-xl mx-auto grid-cols-5 mb-12">
-            <TabsTrigger value="todos">Todos</TabsTrigger>
-            <TabsTrigger value="sistemas">Sistemas</TabsTrigger>
-            <TabsTrigger value="packs">Packs</TabsTrigger>
-            <TabsTrigger value="cursos">Cursos</TabsTrigger>
-            <TabsTrigger value="servicos">Serviços</TabsTrigger>
-          </TabsList>
+          <div className="overflow-x-auto pb-2 mb-10 -mx-4 px-4">
+            <TabsList className="inline-flex w-auto min-w-max gap-1">
+              <TabsTrigger value="todos" className="text-xs sm:text-sm px-3 sm:px-4">Todos</TabsTrigger>
+              <TabsTrigger value="sistemas" className="text-xs sm:text-sm px-3 sm:px-4">Sistemas</TabsTrigger>
+              <TabsTrigger value="packs" className="text-xs sm:text-sm px-3 sm:px-4">Packs</TabsTrigger>
+              <TabsTrigger value="cursos" className="text-xs sm:text-sm px-3 sm:px-4">Cursos</TabsTrigger>
+              <TabsTrigger value="servicos" className="text-xs sm:text-sm px-3 sm:px-4">Serviços</TabsTrigger>
+            </TabsList>
+          </div>
 
           <TabsContent value="todos">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
